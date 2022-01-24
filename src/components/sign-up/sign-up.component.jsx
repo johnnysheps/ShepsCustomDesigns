@@ -26,10 +26,19 @@ class SignUp extends React.Component {
 
         const {displayName, email, password, confirmPassword} = this.state;
 
-        if(password != confirmPassword){
+        //check if user passwrod is correct length for Firebase
+        if(password.length < 6){
+            alert("Password must be at least 6 characters long");
+            return;
+        }
+
+        //ensure both passwords entered match
+        if(password !== confirmPassword){
             alert("Passwords don't match");
             return;
         }
+
+        
 
         try{
             const { user } = await auth.createUserWithEmailAndPassword(email, password);

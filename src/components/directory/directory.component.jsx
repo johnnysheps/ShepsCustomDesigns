@@ -29,18 +29,16 @@ class Directory extends React.Component {
                   linkUrl: 'shop/decals'
                 },
                 {
-                  title: 'womens',
-                  imageUrl: '/assets/img/woman.jpeg',
-                  size: 'large',
+                  title: 'coasters',
+                  imageUrl: '/assets/img/coaster.jpg',
                   id: 4,
-                  linkUrl: 'shop/womens'
+                  linkUrl: 'shop/coasters'
                 },
                 {
-                  title: 'mens',
-                  imageUrl: '/assets/img/mens.jpeg',
-                  size: 'large',
+                  title: 'glasses',
+                  imageUrl: '/assets/img/drinkingglasses.jpg',
                   id: 5,
-                  linkUrl: 'shop/mens'
+                  linkUrl: 'shop/glasses'
                 }
               ]
         }
